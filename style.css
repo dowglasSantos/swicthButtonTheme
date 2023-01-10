@@ -46,6 +46,8 @@ body {
     z-index: 1;
     transform: translateY(-50%);
 
+    animation: slider-out .5s;
+
     border-radius: 50%;
     border: 1px solid var(--border-switch-button);
     background: #fff var(--icon-button-url) no-repeat center;
@@ -56,6 +58,8 @@ body {
     top: 50%;
     right: 0;
     left: initial;
+
+    animation: slider-in .5s forwards;
 }
 
 #container button:hover {
@@ -70,4 +74,20 @@ body {
 
     border-radius: 9999px;
     border: 1px solid var(--border-switch-button);
+}
+
+@keyframes slider-in {
+    from {
+        left: 0%;
+    } to {
+        left: 75%;
+    }
+}
+
+@keyframes slider-out {
+    from {
+        left: 75%;
+    } to {
+        left: 0;
+    }
 }
