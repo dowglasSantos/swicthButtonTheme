@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-body-theme: rgb(14,13,13);
+    --icon-button-url: url('./assets/icon-button.svg');
+}
+
 body {
     width: 100%;
     background-color: rgb(14, 13, 13);
