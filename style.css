@@ -42,12 +42,20 @@ body {
 
     position: absolute;
     top: 50%;
+    left: 0;
     z-index: 1;
     transform: translateY(-50%);
 
     border-radius: 50%;
     border: 1px solid var(--border-switch-button);
     background: #fff var(--icon-button-url) no-repeat center;
+}
+
+.light > #container > button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: initial;
 }
 
 #container button:hover {
